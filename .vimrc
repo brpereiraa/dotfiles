@@ -20,6 +20,6 @@ Plug 'junegunn/fzf', { 'do': { ->fzf#install() } }
 Plug 'mhinz/vim-startify'
 Plug 'rstacruz/vim-closer'
 Plug 'tpope/vim-fugitive'
-Plug 'gruvbox-community/gruvbox'
+Plug 'morhetz/gruvbox'
 
 call plug#end()

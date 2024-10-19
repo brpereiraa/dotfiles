@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =7
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/bruno/Documents/42.cpp_modules/CPP02/ex00'
+let g:netrw_dirhist_8='/home/bruno/Documents/42.cpp_modules'
 let g:netrw_dirhist_7='/home/bruno/Documents/42.cub3d'
 let g:netrw_dirhist_6='/home/bruno/Documents/42.cpp_modules/CPP00/ex01'
 let g:netrw_dirhist_5='/mnt/c/Users/bruno/Documents/Code'
@@ -8,5 +10,3 @@ let g:netrw_dirhist_3='/home/bruno/Documents/42.cub3d/src'
 let g:netrw_dirhist_2='/mnt/c/Users/bruno/Documents/Code/42.cpp_modules/CPP00/ex01'
 let g:netrw_dirhist_1='/home/bruno/powerlevel10k/.git'
 let g:netrw_dirhist_0='/home/bruno/powerlevel10k/.git/branches'
-let g:netrw_dirhist_9='/home/bruno/powerlevel10k/.git'
-let g:netrw_dirhist_8='/home/bruno/powerlevel10k'
