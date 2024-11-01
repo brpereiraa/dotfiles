@@ -23,3 +23,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'morhetz/gruvbox'
 
 call plug#end()
+
+"ColorScheme
+colorscheme gruvbox
+set bg=dark
