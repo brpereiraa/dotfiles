@@ -5,3 +5,5 @@ local plugins = {
         dependencies = { 'nvim-lua/plenary.nvim' }
     }
 }
+
+require("lazy").setup(plugins, opts)
