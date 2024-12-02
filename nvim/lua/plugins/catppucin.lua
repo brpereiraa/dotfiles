@@ -4,7 +4,7 @@ return {
   priority = 1000,
   config = function()
     require("catppuccin").setup{
-      flavor = "frappe",
+      flavor = "latte",
     }
   end
 }

@@ -5,10 +5,8 @@ opt.relativenumber = true
 
 opt.expandtab = true
 opt.tabstop = 2
-opt.softtabstop = 2
-opt.shiftwidth = 2
 
-opt.smartindent = true
+opt.wrap = false
 
 opt.swapfile = false
 opt.backup = false
@@ -18,5 +16,4 @@ opt.undofile = true
 opt.incsearch = true
 opt.scrolloff = 8
 
-vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]
 vim.g.mapleader = " "
