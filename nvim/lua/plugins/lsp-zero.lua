@@ -12,7 +12,7 @@ return {
     dependencies = { "williamboman/mason.nvim" },
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "clangd", "rust_analyzer" }, -- Add other servers if needed
+        ensure_installed = { "clangd", "rust_analyzer", "ts_ls", "asm_lsp", "jdtls", "cssls" }, -- Add other servers if needed
       })
     end,
   },
@@ -29,9 +29,10 @@ return {
     },
     config = function()
       local lsp = require("lsp-zero").preset({})
+      lsp.skip_server_setup({ "tsserver" })
       lsp.configure("clangd", {
         cmd = { "clangd" },
-        filetypes = { "c", "cpp", "objc", "objcpp" },
+        filetypes = { "c", "cpp", "tpp", "objc", "objcpp" },
       })
       lsp.configure("rust_analyzer", {
               cmd = { "rust-analyzer" },
@@ -40,6 +41,18 @@ return {
       lsp.configure("ts_ls", {  -- Using tsserver
               cmd = { "typescript-language-server", "--stdio" },
               filetypes = {"javascript", "typescript", "typescriptreact", "javascriptreact"}
+      })
+      lsp.configure("asm_lsp", {
+              cmd = { "asm-lsp "},
+              filetypes = {"assembly"}
+      })
+      lsp.configure("jdtls", {
+              cmd = { "jdtls" },
+              filetypes = { "java" }
+      })
+      lsp.configure("cssls", {
+              cmd = { "css-lsp" },
+              filetypes = { "css", "scss" }
       })
       lsp.setup()
     end,

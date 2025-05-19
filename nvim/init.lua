@@ -18,5 +18,3 @@ require("mason").setup()
 
 require("set")
 require("keymaps")
-
-vim.cmd.colorscheme "catppuccin-mocha"
